@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>Happy 21st Birthday, Fatir 🖤</title>
+<style>
+:root{--bg:#0c1220;--panel:#151f31;--panel2:#1c2940;--accent:#f2b86b;--mint:#9fe3d0;--text:#f5f4f0;--muted:#b7c1d0;--line:#34435b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;overflow-x:hidden;background:radial-gradient(ellipse at 50% 0%,#23344d 0%,var(--bg) 55%);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}main{width:min(940px,calc(100% - 24px));margin:auto;padding:24px 0 38px;text-align:center;position:relative;z-index:1}
+.topline{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border:1px solid #4a5a70;border-radius:999px;background:#111b2bc9;color:var(--mint);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}
+h1{font-size:clamp(2.7rem,10vw,6rem);line-height:.94;letter-spacing:-.065em;margin:22px 0 16px;font-weight:900;color:var(--text)}h1 span{display:block;color:var(--accent);text-shadow:0 0 35px #f2b86b2a}
+.intro{max-width:680px;margin:0 auto 18px;line-height:1.8;color:var(--muted);font-size:clamp(1rem,3.8vw,1.13rem)}.intro b{color:var(--text)}
+.pill{display:inline-block;color:var(--accent);border:1px solid #705c43;background:#2a251f;padding:8px 12px;border-radius:10px;font-size:.85rem;margin:3px}
+.section-title{font-size:clamp(1.45rem,5vw,2.1rem);margin:36px 0 9px;color:var(--text);letter-spacing:-.03em}.section-title em{font-style:normal;color:var(--accent)}
+.note{color:var(--muted);font-size:.92rem;line-height:1.65}
+.stage{min-height:225px;display:grid;place-items:center}
+.gift-button{border:0;background:none;color:inherit;padding:14px;filter:drop-shadow(0 18px 25px #0007);animation:bob 3s ease-in-out infinite}
+.gift{position:relative;width:148px;height:137px;margin:12px auto 0}.box{position:absolute;left:5px;right:5px;bottom:0;height:92px;border:2px solid #d79a4f;border-radius:5px 5px 12px 12px;background:linear-gradient(135deg,#e5a65a,#a96735)}.box:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:23px;transform:translateX(-50%);background:var(--mint);border-inline:2px solid #d5fff1}
+.lid{position:absolute;z-index:2;left:0;right:0;top:19px;height:28px;border:2px solid #d79a4f;border-radius:6px;background:#f2bd76;transform-origin:10% 100%;transition:transform .7s}.lid:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:23px;transform:translateX(-50%);background:var(--mint)}
+.bow{position:absolute;z-index:3;left:50%;top:-9px;width:65px;height:36px;transform:translateX(-50%);transition:.7s}.bow:before,.bow:after{content:"";position:absolute;width:28px;height:20px;border:6px solid var(--mint);border-radius:50%}.bow:before{left:0;transform:rotate(24deg)}.bow:after{right:0;transform:rotate(-24deg)}
+.gift.open .lid{transform:translate(-19px,-46px) rotate(-27deg)}.gift.open .bow{transform:translate(-51px,-47px) rotate(-26deg)}
+.hint{font-size:.88rem;color:var(--accent);margin-top:13px}
+.card{max-width:750px;margin:16px auto 0;padding:0 22px;max-height:0;overflow:hidden;opacity:0;transform:translateY(14px);border:0 solid var(--line);border-radius:22px;background:linear-gradient(145deg,#1a263a,#121b2b);box-shadow:0 20px 60px #0004;transition:max-height .8s,opacity .5s,transform .5s,padding .5s,border-width .5s;text-align:left}.card.show{max-height:2000px;opacity:1;transform:none;padding:clamp(22px,5vw,36px);border-width:1px}
+.card h2{text-align:center;color:var(--accent);font-size:clamp(1.45rem,5vw,2rem);margin:0 0 18px}.card p{line-height:1.9;color:#d9e0e9;margin:0 0 15px;font-size:1rem}.sign{text-align:right;color:var(--mint)!important;font-weight:800}
+.btn{border:1px solid #d6a260;border-radius:12px;padding:13px 18px;margin:7px 4px;color:#111827;background:linear-gradient(135deg,#f5c783,#dca25c);font-weight:800;box-shadow:0 8px 20px #0002;transition:transform .2s,filter .2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}.btn.secondary{color:var(--text);background:#202d42;border-color:#4b5d76;box-shadow:none}
+.bear-stage{position:relative;display:flex;align-items:flex-end;justify-content:center;gap:0;min-height:158px;margin:12px auto 2px}.bear{font-size:clamp(70px,18vw,105px);display:inline-block;filter:drop-shadow(0 10px 9px #0005);transform-origin:bottom center}.bear.left{animation:leanRight 2.7s ease-in-out infinite}.bear.right{animation:leanLeft 2.7s ease-in-out infinite}.heart{position:absolute;top:3px;left:50%;transform:translateX(-50%);font-size:30px;animation:pulse 1s infinite}
+.question{max-width:720px;margin:22px auto;padding:clamp(20px,5vw,30px);background:linear-gradient(145deg,#1a263a,#121b2b);border:1px solid var(--line);border-radius:22px;box-shadow:0 18px 45px #0003}.question h2{color:var(--accent);font-size:clamp(1.4rem,5vw,2rem);margin:0 0 8px}.answer-area{display:flex;justify-content:center;align-items:center;gap:7px;flex-wrap:wrap;min-height:55px}#answer{color:var(--mint);font-weight:800;line-height:1.6;min-height:26px;margin-top:8px}
+.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px auto 12px}.photo-slot{aspect-ratio:4/5;min-width:0;border:1.5px dashed #60738c;border-radius:16px;background:linear-gradient(145deg,#1b2940,#111a2a);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;padding:10px;color:var(--muted);overflow:hidden;position:relative}.photo-slot .camera{font-size:clamp(1.5rem,5vw,2.5rem);color:var(--accent)}.photo-slot span{font-size:.82rem;line-height:1.35}.photo-slot img{position:absolute;width:100%;height:100%;inset:0;object-fit:cover;display:none}.photo-caption{font-size:.8rem;color:var(--muted);margin-top:10px}
+.gift-row{display:flex;flex-wrap:wrap;justify-content:center}.gift-msg{min-height:26px;color:var(--mint);margin:10px 0;line-height:1.6}
+.floating{position:fixed;pointer-events:none;z-index:5;animation:rise 2.5s ease-out forwards;font-size:25px}.confetti{position:fixed;z-index:10;top:-15px;width:7px;height:12px;pointer-events:none;animation:fall var(--fall,3s) linear forwards}
+footer{padding:30px 6px 4px;color:#8291a7;font-size:.82rem}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}@keyframes leanRight{0%,100%{transform:translateX(0) rotate(-3deg)}50%{transform:translateX(13px) rotate(4deg)}}@keyframes leanLeft{0%,100%{transform:translateX(0) rotate(3deg)}50%{transform:translateX(-13px) rotate(-4deg)}}@keyframes pulse{0%,100%{transform:translateX(-50%) scale(1)}50%{transform:translateX(-50%) scale(1.25)}}@keyframes rise{0%{opacity:0;transform:translateY(0) scale(.6)}15%{opacity:1}100%{opacity:0;transform:translateY(-220px) scale(1.35) rotate(15deg)}}@keyframes fall{to{transform:translateY(110vh) rotate(750deg);opacity:.15}}
+@media(max-width:500px){main{width:calc(100% - 16px);padding-top:17px}.topline{font-size:.68rem;letter-spacing:.08em}.intro{line-height:1.7}.photo-grid{gap:7px}.photo-slot{border-radius:12px;padding:6px}.photo-slot span{font-size:.72rem}.btn{padding:12px 13px;font-size:.92rem}.card p{font-size:.97rem}.bear-stage{min-height:132px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<main>
+  <div class="topline">✦ 25 OCTOBER · BIRTHDAY EDITION ✦</div>
+  <h1>Happy 21st <span>Fatir.</span></h1>
+  <p class="intro">For my favourite guy, my handsome boy, <b>my man</b> — a little birthday corner made just for you. More grown-up, still a little cute, and full of love. 🖤</p>
+  <div><span class="pill">21 looks good on you ✨</span><span class="pill">Made by your girl ♡</span></div>
+
+  <div class="stage">
+    <button class="gift-button" id="giftButton" aria-label="Open birthday gift">
+      <div class="gift" id="gift"><div class="lid"></div><div class="bow"></div><div class="box"></div></div>
+      <div class="hint">OPEN YOUR SURPRISE ↗</div>
+    </button>
+  </div>
+
+  <section class="card" id="letter">
+    <h2>To my birthday boy, Fatir. 🖤</h2>
+    <p>Happy 21st birthday, baby. Today is all about you, and I hope you feel just how loved you are. You’re my favourite person to talk to, the one I want to share my random little moments with, and the guy whose smile can make my whole day better. I might tease you, annoy you, and steal your attention all the time—but underneath all of that is a heart that loves you so much.</p>
+    <p>As you step into 21, I pray Allah gives you a life full of peace, good health, happiness, success and barakah. May your hard work pay off, your dreams get closer, and every sincere dua in your heart find its way to you. May Allah protect you from every worry, keep you surrounded by goodness, and make this year one of your best yet. Ameen. 🤍</p>
+    <p>Thank you for being you, for the memories we’ve made, and for all the little things that make our bond ours. I want to be there for your wins, support you through the hard days, celebrate every good thing that happens to you, and keep making memories with you. I hope life gives you a hundred reasons to smile—and I hope I get to be one of them.</p>
+    <p>So, birthday boy, enjoy your day, eat your cake, make a wish, and remember that your girl is cheering for you always. If I were there right now, you’d be getting the longest hug, a million kisses, and probably me refusing to let go. Happy 21st birthday, Fatir. May this new chapter be exciting, kind and full of beautiful beginnings. I love you more than this little website can ever explain. 🖤✨</p>
+    <p class="sign">Always your girl. ♡</p>
+  </section>
+
+  <h2 class="section-title">A little <em>cuddle animation</em></h2>
+  <p class="note">Cute enough for us, cool enough for you. 🤝🖤</p>
+  <div class="bear-stage" aria-label="Two teddy bears moving in for a cuddle"><span class="bear left">🧸</span><span class="heart">🖤</span><span class="bear right">🧸</span></div>
+  <p class="note">Imagine me pulling you into a proper hug and staying there a little longer. 🤗</p>
+
+  <section class="question">
+    <h2>Fatir, can I have a hug? 🤗</h2>
+    <p class="note">Your girl is waiting with her arms wide open.</p>
+    <div class="answer-area">
+      <button class="btn" id="yesBtn">Yes, of course 🤍</button>
+      <button class="btn secondary" id="moreBtn">Come here, baby 🫂</button>
+      <button class="btn secondary" id="noBtn">No 😏</button>
+    </div>
+    <div id="answer" aria-live="polite"></div>
+    <div id="hugResult" class="bear-stage" style="display:none"><span class="bear left">🧸</span><span class="heart">💗</span><span class="bear right">🧸</span></div>
+  </section>
+
+  <h2 class="section-title">Our little <em>memory wall</em> 📸</h2>
+  <p class="note">Three empty photo spaces for your favourite pictures. Add them on your device whenever you want.</p>
+  <div class="photo-grid">
+    <label class="photo-slot"><span class="camera">＋</span><span>Our favourite<br>picture</span><input type="file" accept="image/*" hidden><img alt="First favourite photo"></label>
+    <label class="photo-slot"><span class="camera">＋</span><span>A little<br>memory</span><input type="file" accept="image/*" hidden><img alt="Second favourite photo"></label>
+    <label class="photo-slot"><span class="camera">＋</span><span>My favourite<br>guy 🖤</span><input type="file" accept="image/*" hidden><img alt="Third favourite photo"></label>
+  </div>
+  <p class="photo-caption">Photos stay on this page in your browser; they are not uploaded anywhere.</p>
+
+  <h2 class="section-title">Little virtual gifts <em>for you</em></h2>
+  <p class="note">Choose your birthday reward, handsome.</p>
+  <div class="gift-row">
+    <button class="btn gift-card" data-message="Mwah! 💋 A million kisses delivered, with extra ones saved for later.">💋 Million kisses</button>
+    <button class="btn gift-card" data-message="Hug activated. 🫂 Squeeze tight, no letting go just yet.">🫂 One proper hug</button>
+    <button class="btn gift-card" data-message="Ameen. 🤍 May Allah bless your 21st year with peace, success, health and happiness.">🤲 A birthday dua</button>
+  </div>
+  <div id="giftMessage" class="gift-msg" aria-live="polite"></div>
+  <button class="btn" id="confettiBtn">Celebrate, birthday boy ✦</button>
+  <footer>Built with love for Fatir · 21 on 25 October 🖤</footer>
+</main>
+<script>
+const giftButton=document.getElementById('giftButton');
+giftButton.addEventListener('click',()=>{
+  document.getElementById('gift').classList.add('open');
+  document.getElementById('letter').classList.add('show');
+  giftButton.querySelector('.hint').textContent='SURPRISE UNLOCKED ✦';
+  confetti(90);
+  setTimeout(()=>document.getElementById('letter').scrollIntoView({behavior:'smooth',block:'center'}),250);
+});
+function floatBits(symbols,count=16){
+ for(let i=0;i<count;i++){const el=document.createElement('span');el.className='floating';el.textContent=symbols[Math.floor(Math.random()*symbols.length)];el.style.left=(5+Math.random()*90)+'vw';el.style.bottom=(8+Math.random()*22)+'vh';el.style.animationDuration=(1.7+Math.random()*1.5)+'s';document.body.appendChild(el);setTimeout(()=>el.remove(),3500)}
+}
+function confetti(count=70){
+ const colors=['#f2b86b','#9fe3d0','#f5f4f0','#86a9d4','#d5a8f5'];
+ for(let i=0;i<count;i++){const el=document.createElement('i');el.className='confetti';el.style.left=Math.random()*100+'vw';el.style.background=colors[Math.floor(Math.random()*colors.length)];el.style.borderRadius=Math.random()>.5?'50%':'2px';el.style.setProperty('--fall',(2+Math.random()*2.7)+'s');el.style.animationDelay=(Math.random()*.7)+'s';document.body.appendChild(el);setTimeout(()=>el.remove(),5500)}
+}
+function hug(){document.getElementById('answer').textContent='HUG ACCEPTED. 🫂 Come here, my guy. Squeezeeeee!';document.getElementById('hugResult').style.display='flex';floatBits(['🖤','🤍','🫂','✨','💋'],26);confetti(45)}
+document.getElementById('yesBtn').addEventListener('click',hug);document.getElementById('moreBtn').addEventListener('click',hug);
+document.getElementById('noBtn').addEventListener('click',()=>{document.getElementById('answer').textContent='Too late, you’re still getting a hug. 😏🫂';floatBits(['🫂','🖤','✨'],18)});
+document.querySelectorAll('.gift-card').forEach(btn=>btn.addEventListener('click',()=>{document.getElementById('giftMessage').textContent=btn.dataset.message;floatBits(['🖤','💋','✨','🤍'],12)}));
+document.getElementById('confettiBtn').addEventListener('click',()=>{confetti(130);floatBits(['🖤','🤍','✨','💋','🎉'],30)});
+document.querySelectorAll('.photo-slot input').forEach(input=>input.addEventListener('change',()=>{
+ const file=input.files&&input.files[0];if(!file)return;
+ if(!file.type.startsWith('image/'))return;
+ const slot=input.closest('.photo-slot'),img=slot.querySelector('img'),reader=new FileReader();
+ reader.onload=()=>{img.src=reader.result;img.style.display='block';slot.querySelector('.camera').style.display='none';slot.querySelector('span:nth-of-type(2)').style.display='none'};
+ reader.readAsDataURL(file);
+}));
+</script>
+</body>
+</html>
